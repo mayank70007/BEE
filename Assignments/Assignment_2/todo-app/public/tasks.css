@@ -1,0 +1,95 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+h1 {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  width: 50%;
+}
+
+li {
+  background: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-number {
+  font-weight: bold;
+  color: #6c63ff;
+  min-width: 30px;
+  text-align: center;
+}
+
+.task-title {
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #6a5acd;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.add-task {
+  background-color: #6a5acd;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.add-task a {
+  color: white;
+  text-decoration: none;
+}
+
+.add-task:hover {
+  background-color: #5948b0;
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #6a5acd;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.floating-button:hover {
+  background-color: #5948b0;
+}

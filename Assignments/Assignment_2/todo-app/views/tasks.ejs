@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TODO LIST</title>
+  <link rel="stylesheet" href="/tasks.css">
+</head>
+<body>
+  <h1>TODO LIST</h1>
+
+<form action="/task">
+  <input type="text" name="id" placeholder="Search task" />
+  <button type="submit">Search</button>
+</form>
+  <ul>
+    <% tasks.forEach((task, index) => { %>
+      <li>
+        <span class="task-number">#<%= index + 1 %></span>
+        <span class="task-title">
+          <a href="/task?id=<%= task.id %>"><%= task.title %></a>
+        </span>
+      </li>
+    <% }) %>
+  </ul>
+
+  <button class="add-task">
+    <a href="/add-task">Add New Task</a>
+  </button>
+
+  <button class="floating-button" onclick="window.location.href='/add-task'">+</button>
+</body>
+</html>
